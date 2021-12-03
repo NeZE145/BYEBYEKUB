@@ -2,7 +2,21 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char A=x;
+	char b ='Z',c='A';
+	if(c<x&&b>x||x==b||x==c){
+		if(x==c){
+			A=b;
+		}else{
+			A=x-1;
+		}
+	}else{
+		A=48;
+		
+
+	}
+
+	return A;
 }
 
 int main(){
