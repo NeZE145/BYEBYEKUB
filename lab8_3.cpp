@@ -4,7 +4,7 @@ using namespace std;
 char before(char x){
 	char A=x;
 	char b ='Z',c='A';
-	if(c<x&&b>x||x==b||x==c){
+	if((c<x&&b>x)||x==b||x==c){
 		if(x==c){
 			A=b;
 		}else{
@@ -12,12 +12,13 @@ char before(char x){
 		}
 	}else{
 		A=48;
-		
 
 	}
 
 	return A;
 }
+
+
 
 int main(){
 	//Test Case
